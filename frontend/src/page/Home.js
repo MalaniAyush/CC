@@ -74,7 +74,7 @@ const Home = () => {
 
       <div className="my-6">
         <div className="flex w-full items-center mb-4">
-          <h2 className="font-bold text-2xl text-gray-800">Fresh Vegetables</h2>
+          <h2 className="font-bold text-2xl text-gray-800">Gadgets</h2>
           <div className="ml-auto flex gap-4">
             <button
               onClick={preveProduct}
