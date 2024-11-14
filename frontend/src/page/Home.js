@@ -25,28 +25,28 @@ const Home = () => {
   };
 
   return (
-    <div className="p-2 md:p-4">
-      <div className="md:flex gap-4 py-2">
+    <div className="p-2 md:p-4 bg-gray-50 min-h-screen">
+      <div className="md:flex gap-6 py-6">
         <div className="md:w-1/2">
-          <div className="flex gap-3 bg-slate-300 w-36 px-2 items-center rounded-full">
-            <p className="text-sm font-medium text-slate-900">Bike Delivery</p>
+          <div className="flex gap-3 bg-indigo-300 w-40 px-3 py-1 items-center rounded-full">
+            <p className="text-sm font-semibold text-indigo-900">Fast Delivery</p>
             <img
               src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png"
-              className="h-7"
+              className="h-8"
+              alt="Delivery Icon"
             />
           </div>
-          <h2 className="text-4xl md:text-7xl font-bold py-3">
-            The Fasted Delivery in{" "}
-            <span className="text-red-600 text-">Your Home</span>
+          <h2 className="text-4xl md:text-6xl font-extrabold py-4 text-gray-800">
+            Quick and Reliable Delivery of{" "}
+            <span className="text-indigo-700">Electronics & Gadgets</span>
           </h2>
-          <p className="py-3 text-base ">
-            Seamless Online Experience: Our user-friendly platform is designed
-            to enhance your shopping experience. With easy navigation, detailed
-            product descriptions, and secure payment options, we aim to make
-            your ordering process hassle-free and enjoyable.
+          <p className="py-3 text-lg text-gray-600">
+            Discover a smooth shopping experience, with easy navigation and secure payments. From
+            electronics to essentials, get what you need with a single click and experience our swift
+            delivery, making shopping simple and enjoyable!
           </p>
-          <button className="font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md">
-            Order Now
+          <button className="font-semibold bg-indigo-500 text-white px-5 py-2 mt-4 rounded-md hover:bg-indigo-600 transition">
+            Shop Now
           </button>
         </div>
 
@@ -72,28 +72,26 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="">
-        <div className="flex w-full items-center">
-          <h2 className="font-bold text-2xl text-slate-800 mb-4">
-            Fresh Vegetables
-          </h2>
+      <div className="my-6">
+        <div className="flex w-full items-center mb-4">
+          <h2 className="font-bold text-2xl text-gray-800">Fresh Vegetables</h2>
           <div className="ml-auto flex gap-4">
             <button
               onClick={preveProduct}
-              className="bg-slate-300 hover:bg-slate-400 text-lg  p-1 rounded"
+              className="bg-gray-300 hover:bg-gray-400 text-lg p-1 rounded"
             >
               <GrPrevious />
             </button>
             <button
               onClick={nextProduct}
-              className="bg-slate-300 hover:bg-slate-400 text-lg p-1 rounded "
+              className="bg-gray-300 hover:bg-gray-400 text-lg p-1 rounded"
             >
               <GrNext />
             </button>
           </div>
         </div>
         <div
-          className="flex gap-5 overflow-scroll scrollbar-none scroll-smooth transition-all"
+          className="flex gap-5 overflow-x-scroll scrollbar-none scroll-smooth transition-all"
           ref={slideProductRef}
         >
           {homeProductCartListVegetables[0]
@@ -115,7 +113,7 @@ const Home = () => {
         </div>
       </div>
 
-      <AllProduct heading={"Your Product"} />
+      <AllProduct heading={"Explore More Products"} />
     </div>
   );
 };
